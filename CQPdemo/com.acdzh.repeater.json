@@ -1,0 +1,31 @@
+{
+    "ret":1,					// 返回码，固定为1
+    "apiver":9,					// Api版本，本SDK为9
+    "name":"人类的本质",	// 应用名称
+    "version":"1.0.0",			// 应用版本
+    "version_id":1,				// 应用顺序版本（
+    "author":"@acdzh",			// 应用作者
+    "description":"当群内可以+1时果断复读！（良心厂家（划掉）",
+    "event":[
+      {
+        "id": 2,
+        "type": 2,
+        "name": "群消息处理",
+        "function": "_eventGroupMsg",
+        "priority": 30000
+      }
+
+    ],
+    "menu":[
+        {
+            "name":"作者",			//菜单名称
+            "function":"_menuA"		//菜单对应函数
+        }
+    ],
+    "status":[
+
+    ],
+    "auth":[
+        101,  //发送群消息			sendGroupMsg
+    ]
+}
